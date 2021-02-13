@@ -7,11 +7,11 @@ public class Algos {
         try {
             int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9};
             int x = input.nextInt();
-            boolean result = search(arr, x) == -1;
-            if(result)
+            int result = search(arr, x);
+            if(result == -1)
                 System.out.println(x + " is not present in the the array");
             else
-                System.out.println("The element is present at index " + search(arr, x));
+                System.out.println("The element is present at index " + result);
         } catch (InputMismatchException e) {
             System.out.println("Invalid input");
         }
